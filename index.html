@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap - Black & Yellow Theme</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Black & Yellow Theme */
+    body {
+      background-color: #000;  /* Black background */
+      color: #fff;             /* White text for contrast */
+    }
+    
+    .container, .grid-layouts.container {
+      border: 1px solid #FFD700;  /* Yellow border */
+    }
+    
+    .bg {
+      padding: 10px;
+      background-color: #000;  /* Black background */
+      border: 1px solid #FFD700;  /* Yellow border */
+    }
+    
+    .nav-link {
+      color: #FFD700;  /* Yellow links */
+    }
+    
+    .nav-link:hover {
+      color: #fff;     /* Change to white on hover */
+    }
+    
+    .btn-primary {
+      background-color: #FFD700;  /* Yellow button */
+      border-color: #FFD700;
+      color: #000;                /* Black text on button */
+    }
+    
+    .btn-primary:hover {
+      background-color: #FFC300;  /* A slightly different shade on hover */
+      border-color: #FFC300;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header Intro -->
+  <div class="container my-3 text-center">
+    <h1>The first Bootstrap practices</h1>
+    <p>Let's start learning Bootstrap with a Black & Yellow theme...</p>
+  </div>
+
+  <!-- Main Grid Layout -->
+  <div class="grid-layouts container text-center">
+    
+    <!-- Top Header Row with Logo, Navigation, and Login -->
+    <div class="row">
+      <!-- Logo Column -->
+      <div class="col-sm bg">
+        <img width="70px" height="70px" style="border-radius: 30px; border: 1px solid #FFD700;" src="https://www.natyasutraonline.com/images/v5/master-class.jpg" alt="Logo">
+      </div>
+      <!-- Navigation Column -->
+      <div class="col-sm bg">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Login Button Column -->
+      <div class="col-sm bg">
+        <button class="btn btn-primary">Login now</button>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row" style="height:200px;">
+      <!-- Left Sidebar -->
+      <div class="col-sm-2 bg">
+        <img width="100px" height="170px" style="border-radius: 10px;" src="https://i.pinimg.com/736x/e0/15/fe/e015fea2bdbdab268fd01b27def5157c.jpg" alt="leftside">
+      </div>
+      <!-- Main Content -->
+      <div class="col-sm bg">
+        I am a Bharatanatyam dancer and secured second place at the district level.
+        I love dancing as it keeps my body fit and my mind relaxed. I received a diploma in Bharatanatyam 
+        after qualifying in May 2023, securing first-class distinction.
+      </div>
+    </div>
+
+    <!-- Footer Row -->
+    <div class="row">
+      <div class="col-sm bg">
+        Footer information
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Final Row with Four Columns -->
+    <div class="row" style="height: 150px;">
+      <div class="col-sm-3 bg">.col-3</div>
+      <div class="col-sm-3 bg">.col-3</div>
+      <div class="col-sm-3 bg">.col-3</div>
+      <div class="col-sm-3 bg">.col-3</div>
+    </div>
+  </div>
+</body>
+</html>
